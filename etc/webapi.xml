@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * LINK Mobility SMS Notifications
+ *
+ * Sends transactional SMS notifications through the LINK Mobility messaging
+ * service.
+ *
+ * @author Joseph Leedy <joseph@wagento.com>
+ * @author Yair García Torres <yair.garcia@wagento.com>
+ * @copyright Copyright (c) LINK Mobility (https://www.linkmobility.com/)
+ * @license https://opensource.org/licenses/OSL-3.0.php Open Software License 3.0
+ */
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route method="GET" url="V1/sms_subscriptions/:id">
+        <service class="Linkmobility\Notifications\Api\SmsSubscriptionRepositoryInterface" method="get"/>
+        <resources>
+            <resource ref="Linkmobility_Notifications::view_sms_subscription"/>
+        </resources>
+    </route>
+    <route method="GET" url="V1/sms_subscriptions/search">
+        <service class="Linkmobility\Notifications\Api\SmsSubscriptionRepositoryInterface" method="getList"/>
+        <resources>
+            <resource ref="Linkmobility_Notifications::view_sms_subscription"/>
+        </resources>
+    </route>
+    <route method="POST" url="V1/sms_subscriptions">
+        <service class="Linkmobility\Notifications\Api\SmsSubscriptionRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="Linkmobility_Notifications::manage_sms_subscription"/>
+        </resources>
+    </route>
+    <route method="PUT" url="V1/sms_subscriptions/:id">
+        <service class="Linkmobility\Notifications\Api\SmsSubscriptionRepositoryInterface" method="save"/>
+        <resources>
+            <resource ref="Linkmobility_Notifications::manage_sms_subscription"/>
+        </resources>
+    </route>
+    <route method="DELETE" url="V1/sms_subscriptions/:id">
+        <service class="Linkmobility\Notifications\Api\SmsSubscriptionRepositoryInterface" method="deleteById"/>
+        <resources>
+            <resource ref="Linkmobility_Notifications::manage_sms_subscription"/>
+        </resources>
+    </route>
+</routes>
