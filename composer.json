@@ -1,0 +1,20 @@
+{
+  "name": "linkmobility/module-sms-notifications-webapi",
+  "description": "Sends transactional SMS notifications through the LINK Mobility messaging service",
+  "type": "magento2-module",
+  "license": [
+    "OSL-3.0"
+  ],
+  "require": {
+    "magento/module-webapi": "102.0.*|103.0.*",
+    "linkmobility/module-sms-notifications": "^0.1"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "LinkMobility\\SMSNotificationsWebApi\\": ""
+    }
+  }
+}
