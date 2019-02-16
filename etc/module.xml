@@ -15,7 +15,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
     <module name="LinkMobility_SMSNotificationsWebApi">
         <sequence>
-            <module name="Linkmobility_Notifications"/>
+            <module name="LinkMobility_SMSNotifications"/>
         </sequence>
     </module>
 </config>
