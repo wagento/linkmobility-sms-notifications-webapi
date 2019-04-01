@@ -1,5 +1,5 @@
 {
-  "name": "linkmobility/module-sms-notifications-webapi",
+  "name": "wagento/module-linkmobility-sms-notifications-webapi",
   "description": "Sends transactional SMS notifications through the LINK Mobility messaging service",
   "type": "magento2-module",
   "license": [
@@ -7,14 +7,14 @@
   ],
   "require": {
     "magento/module-webapi": "100.2.*|100.3.*",
-    "linkmobility/module-sms-notifications": "^0.1"
+    "wagento/module-linkmobility-sms-notifications": "^0.1"
   },
   "autoload": {
     "files": [
       "registration.php"
     ],
     "psr-4": {
-      "LinkMobility\\SMSNotificationsWebApi\\": ""
+      "Wagento\\LinkMobilitySMSNotificationsWebApi\\": ""
     }
   }
 }

@@ -8,14 +8,14 @@
  *
  * @author Joseph Leedy <joseph@wagento.com>
  * @author Yair García Torres <yair.garcia@wagento.com>
- * @copyright Copyright (c) LINK Mobility (https://www.linkmobility.com/)
+ * @copyright Copyright (c) Wagento (https://wagento.com/)
  * @license https://opensource.org/licenses/OSL-3.0.php Open Software License 3.0
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="LinkMobility_SMSNotificationsWebApi">
+    <module name="Wagento_LinkMobilitySMSNotificationsWebApi">
         <sequence>
-            <module name="LinkMobility_SMSNotifications"/>
+            <module name="Wagento_LinkMobilitySMSNotifications"/>
         </sequence>
     </module>
 </config>
