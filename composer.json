@@ -14,7 +14,7 @@
       "registration.php"
     ],
     "psr-4": {
-      "Wagento\\LinkMobilitySMSNotificationsWebApi\\": ""
+      "Wagento\\SMSNotificationsWebApi\\": ""
     }
   }
 }

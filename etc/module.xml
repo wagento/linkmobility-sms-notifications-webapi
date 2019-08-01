@@ -13,9 +13,9 @@
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="Wagento_LinkMobilitySMSNotificationsWebApi">
+    <module name="Wagento_SMSNotificationsWebApi">
         <sequence>
-            <module name="Wagento_LinkMobilitySMSNotifications"/>
+            <module name="Wagento_SMSNotifications"/>
         </sequence>
     </module>
 </config>

@@ -14,33 +14,33 @@
 -->
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
     <route method="GET" url="V1/sms_subscriptions/:id">
-        <service class="Wagento\LinkMobilitySMSNotifications\Api\SmsSubscriptionRepositoryInterface" method="get"/>
+        <service class="Wagento\SMSNotifications\Api\SmsSubscriptionRepositoryInterface" method="get"/>
         <resources>
-            <resource ref="Wagento_LinkMobilitySMSNotifications::view_sms_subscription"/>
+            <resource ref="Wagento_SMSNotifications::view_sms_subscription"/>
         </resources>
     </route>
     <route method="GET" url="V1/sms_subscriptions/search">
-        <service class="Wagento\LinkMobilitySMSNotifications\Api\SmsSubscriptionRepositoryInterface" method="getList"/>
+        <service class="Wagento\SMSNotifications\Api\SmsSubscriptionRepositoryInterface" method="getList"/>
         <resources>
-            <resource ref="Wagento_LinkMobilitySMSNotifications::view_sms_subscription"/>
+            <resource ref="Wagento_SMSNotifications::view_sms_subscription"/>
         </resources>
     </route>
     <route method="POST" url="V1/sms_subscriptions">
-        <service class="Wagento\LinkMobilitySMSNotifications\Api\SmsSubscriptionRepositoryInterface" method="save"/>
+        <service class="Wagento\SMSNotifications\Api\SmsSubscriptionRepositoryInterface" method="save"/>
         <resources>
-            <resource ref="Wagento_LinkMobilitySMSNotifications::manage_sms_subscription"/>
+            <resource ref="Wagento_SMSNotifications::manage_sms_subscription"/>
         </resources>
     </route>
     <route method="PUT" url="V1/sms_subscriptions/:id">
-        <service class="Wagento\LinkMobilitySMSNotifications\Api\SmsSubscriptionRepositoryInterface" method="save"/>
+        <service class="Wagento\SMSNotifications\Api\SmsSubscriptionRepositoryInterface" method="save"/>
         <resources>
-            <resource ref="Wagento_LinkMobilitySMSNotifications::manage_sms_subscription"/>
+            <resource ref="Wagento_SMSNotifications::manage_sms_subscription"/>
         </resources>
     </route>
     <route method="DELETE" url="V1/sms_subscriptions/:id">
-        <service class="Wagento\LinkMobilitySMSNotifications\Api\SmsSubscriptionRepositoryInterface" method="deleteById"/>
+        <service class="Wagento\SMSNotifications\Api\SmsSubscriptionRepositoryInterface" method="deleteById"/>
         <resources>
-            <resource ref="Wagento_LinkMobilitySMSNotifications::manage_sms_subscription"/>
+            <resource ref="Wagento_SMSNotifications::manage_sms_subscription"/>
         </resources>
     </route>
 </routes>
